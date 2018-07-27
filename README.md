@@ -10,9 +10,6 @@ You can type text or code! These blocks execute things.
 print("It Worked!")
 ```
 
-    It Worked!
-    
-
 ## Introduction to data structures
 
 We want to figure out where we want to go for dinner tonight. And we are craving hamburgers :).
@@ -23,23 +20,17 @@ In the cell below, create and print a string called `"mcdonalds"`
 
 
 ```python
-restaurant_1 = 'mcdonalds'
+restaurant_1 = 
 print(restaurant)
 ```
-
-    Mcdonalds
-    
 
 Use the `capitalize()` method to capitalize the contents of our `restaurant` variable.  Print the variable again to see our changes!
 
 
 ```python
-restaurant_1 = restaurant_1.capitalize()
+restaurant_1 = 
 print(restaurant)
 ```
-
-    Mcdonalds
-    
 
 ### 1. Lists
 
@@ -49,9 +40,9 @@ We want to collect our data. A list is an ordered collection. You can use square
 
 
 ```python
-restaurant_2 = "Burger King"
-restaurants = ['Mcdonalds', 'Burger King']
-same_restaurants = [restaurant_1, restaurant_2]
+restaurant_2 = 
+restaurants = 
+same_restaurants = 
 ```
 
 Note that these two are exactly the same! You can test for this:
@@ -61,25 +52,16 @@ Note that these two are exactly the same! You can test for this:
 restaurants == same_restaurants
 ```
 
-
-
-
-    True
-
-
-
 What if we want to access information inside `restaurants` or `same_restaurants`?
 
 What if you want to add a burger restaurant to your list? Append `'Shake Shack'` to `restaurants`
 
 
 ```python
-restaurants.append("Shake Shack")
+# Append "Shake Shack" to restaurants!
+
 print(restaurants)
 ```
-
-    ['Mcdonalds', 'Burger King', 'Shake Shack']
-    
 
 ### 2. Dictionaries
 
@@ -98,23 +80,9 @@ mcdonalds.keys()
 ```
 
 
-
-
-    dict_keys(['name', 'address'])
-
-
-
-
 ```python
 mcdonalds.values()
 ```
-
-
-
-
-    dict_values(['mcdonalds', '85 broad street'])
-
-
 
 You can wrap this into a list
 
@@ -123,13 +91,6 @@ You can wrap this into a list
 list(mcdonalds.values())
 ```
 
-
-
-
-    ['mcdonalds', '85 broad street']
-
-
-
 Create two more restaurant dictionaries for the following restaurants:
 
 |  Restaurant |    Address    |
@@ -137,25 +98,7 @@ Create two more restaurant dictionaries for the following restaurants:
 | Burger King | 1313 Broadway |
 | Shake Shack |   691 8th Ave |
 
-
-```python
-burger_king = {'name': 'Burger King', 'address': '1313 broadway'}
-shake_shack = {'name': 'Shake Shack', 'address': '691 8th Ave'}
-```
-
 Now use the correct key to access the address for Shake Shack:
-
-
-```python
-shake_shack['address']
-```
-
-
-
-
-    '691 8th Ave'
-
-
 
 Now, we'll set up for the final programming challenge of this lesson.  
 
@@ -163,7 +106,7 @@ First, create a list containing the restaurant dictionaries we made above.
 
 
 ```python
-list_of_dictionaries = [mcdonalds, burger_king, shake_shack]
+list_of_dictionaries = 
 ```
 
 ### Challenge
@@ -175,14 +118,3 @@ Your output should be:
 `"mcdonalds is located at 85 broad street!"`   
 `"Burger King is located at 1313 broadway!"`   
 `"Shake Shack is located at 691 8th Ave!"`   
-
-
-```python
-for i in list_of_dictionaries:
-    print(i['name'] + ' is located at ' + i['address'] + '!')
-```
-
-    mcdonalds is located at 85 broad street!
-    Burger King is located at 1313 broadway!
-    Shake Shack is located at 691 8th Ave!
-    
